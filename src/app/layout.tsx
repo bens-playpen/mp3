@@ -55,12 +55,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en-AU"
-      className={`${inter.variable} ${manrope.variable}`}
-      suppressHydrationWarning
-    >
-      <body className="min-h-screen bg-background text-foreground font-sans">
+    <html lang="en-AU" className={`${inter.variable} ${manrope.variable}`}>
+      <body
+        className="min-h-screen bg-background text-foreground font-sans"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>
