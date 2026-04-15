@@ -6,23 +6,23 @@ const phases = [
     title: "Discovery",
     duration: "30 min",
     body:
-      "A short call with someone senior — no discovery form, no sales funnel. We map where your business is, where you want it in 12 months, and whether we&rsquo;re a fit at all.",
-    moments: ["Brief-back the same week", "Honest yes / no / not yet", "Tier recommendation"],
+      "A short call with someone senior — no discovery form, no sales funnel. We map where your business is, where you want it in 12 months, and whether we’re a fit at all.",
+    moments: ["Brief-back the same week", "Honest yes / no / not yet", "Catalogue recommendation"],
   },
   {
     n: "02",
     title: "Launch",
     duration: "Weeks 1–3",
     body:
-      "We onboard properly. Access, audits, a 30/60/90 day priority list, and a named human on your account. You&rsquo;ll meet the team before we touch anything live.",
-    moments: ["Access &amp; audit checklist", "30 / 60 / 90 plan", "Kick-off with your team"],
+      "We onboard properly. Access, audits, a 30/60/90 day priority list, and a named human on your account. You’ll meet the team before we touch anything live.",
+    moments: ["Access & audit checklist", "30 / 60 / 90 plan", "Kick-off with your team"],
   },
   {
     n: "03",
     title: "Rhythm",
     duration: "Every month, forever",
     body:
-      "Monthly reporting, regular check-ins, continuous delivery against the plan. If something isn&rsquo;t working, we change it before you have to ask.",
+      "Monthly reporting, regular check-ins, continuous delivery against the plan. If something isn’t working, we change it before you have to ask.",
     moments: ["Monthly performance report", "Recurring strategy call", "Slack / email access"],
   },
 ];
@@ -63,10 +63,9 @@ export function HowWeWork() {
                 {phase.title}
               </h3>
 
-              <p
-                className="mt-3 text-[15px] leading-relaxed text-foreground/70"
-                dangerouslySetInnerHTML={{ __html: phase.body }}
-              />
+              <p className="mt-3 text-[15px] leading-relaxed text-foreground/70">
+                {phase.body}
+              </p>
 
               <ul className="mt-8 flex flex-col gap-2.5 border-t border-foreground/10 pt-6">
                 {phase.moments.map((m) => (
@@ -75,7 +74,7 @@ export function HowWeWork() {
                     className="flex items-center gap-2.5 text-[13px] text-foreground/70"
                   >
                     <span className="h-1 w-4 rounded-full bg-primary" />
-                    <span dangerouslySetInnerHTML={{ __html: m }} />
+                    <span>{m}</span>
                   </li>
                 ))}
               </ul>

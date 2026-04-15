@@ -2,16 +2,16 @@ import { Check, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const good = [
-  "You&rsquo;ve been trading 2+ years and know your margins",
-  "You already have a website — even if it&rsquo;s tired",
+  "You’ve been trading 2+ years and know your margins",
+  "You already have a website — even if it’s tired",
   "You want one team you can call, not five freelancers",
-  "You&rsquo;d rather invest properly than cheaply",
+  "You’d rather invest properly than cheaply",
 ];
 
 const bad = [
   "You want the cheapest quote on the table",
   "You want to run ads without anyone touching the website",
-  "You&rsquo;re shopping for a single one-off task",
+  "You’re shopping for a single one-off task",
   "You expect results without giving us the access to deliver them",
 ];
 
@@ -67,7 +67,7 @@ export function FitGate() {
                   className="flex items-start gap-3 text-[15px] leading-relaxed text-background/80"
                 >
                   <span className="mt-2 h-1 w-3 shrink-0 rounded-full bg-accent" />
-                  <span dangerouslySetInnerHTML={{ __html: item }} />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
@@ -87,7 +87,7 @@ export function FitGate() {
                   className="flex items-start gap-3 text-[15px] leading-relaxed text-background/60"
                 >
                   <span className="mt-2 h-1 w-3 shrink-0 rounded-full bg-secondary" />
-                  <span dangerouslySetInnerHTML={{ __html: item }} />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
