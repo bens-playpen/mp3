@@ -608,10 +608,15 @@ export function getRequestType(
   return service.requestTypes.find((rt) => rt.id === requestTypeId);
 }
 
+/**
+ * Pure AUD formatter — avoids `Intl.NumberFormat` because server and client
+ * ICU versions emit different whitespace characters before the number,
+ * causing React 19 hydration text-content mismatches.
+ */
 export function formatAud(n: number): string {
-  return new Intl.NumberFormat("en-AU", {
-    style: "currency",
-    currency: "AUD",
-    maximumFractionDigits: 0,
-  }).format(n);
+  const rounded = Math.round(n);
+  const withCommas = Math.abs(rounded)
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return rounded < 0 ? `-$${withCommas}` : `$${withCommas}`;
 }
