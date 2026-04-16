@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const nav = [
-  { label: "Templates", href: "#templates" },
-  { label: "Catalogue", href: "#catalog" },
-  { label: "How we work", href: "#how" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Who it's for", href: "#fit" },
+  { label: "How we work", href: "#how-we-work" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -42,11 +42,10 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
-            <a href="#contact">Sign in</a>
-          </Button>
           <Button asChild size="sm">
-            <a href="#catalog">Open the catalogue</a>
+            <a href="https://calendly.com/yoonet" target="_blank" rel="noreferrer">
+              Book a call
+            </a>
           </Button>
         </div>
       </div>

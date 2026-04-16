@@ -8,32 +8,32 @@ import {
 
 const faqs = [
   {
-    q: "Why is everything in a container?",
-    a: "Because open-ended scoping is how agencies get into trouble. Every service in the catalogue has a defined deliverable, a defined intake form and a defined price. You know what you're getting, we know what we're delivering, and the team can actually be held to a scope. No bespoke project proposals.",
+    q: "What's included in each plan?",
+    a: "Each plan includes a clearly defined scope. Full inclusions are listed on the pricing cards above, with Foundation, Growth, and Performance expanding based on your stage.",
   },
   {
-    q: "What if my request isn't on the menu?",
-    a: "Most \"unique\" requests are combinations of things that are on the menu. Redesigning a services page and setting up tracking is a Website Updates task plus a Google Ads conversion tracking task — not a custom project. If we genuinely can't decompose your request into defined services, we'll tell you, and we'll say no rather than improvise.",
+    q: "Can I change plans?",
+    a: "Yes. Month to month, no lock-in. Upgrade or downgrade anytime with 30 days notice.",
   },
   {
-    q: "Why the $600/mo subscription minimum?",
-    a: "It's the floor below which we can't deliver the quality we'd put our name to. It protects margin, it protects the team's focus, and it filters for clients who are serious about investing in the work. Below that threshold we'd rather say no than ship half-finished work.",
+    q: "What if I need something not in my plan?",
+    a: "Add-ons are available for things like email marketing, workspace migrations, and website rebuilds. Your account lead will recommend what makes sense.",
   },
   {
-    q: "Can I submit quote requests without subscribing?",
-    a: "Yes. One-off services — website builds, landing pages, Workspace migrations — sit in a separate quotes section of the basket. You can submit them anytime, no minimum, and no pressure to also sign up for ongoing work.",
+    q: "Who does the work?",
+    a: "Our team in the Philippines, managed from New Zealand. 130+ people, 15+ years in business. You'll have a named person on your account.",
   },
   {
-    q: "Who actually does the work?",
-    a: "The delivery team is 130+ strong in Balanga, Philippines — same crew that's served 500+ Australian and New Zealand businesses over 15+ years. Your account lead sits in Australia or New Zealand. In-region face, offshore engine room, one integrated team.",
+    q: "Is there a contract?",
+    a: "Month to month. We earn your business every month.",
   },
   {
-    q: "What about contracts and notice periods?",
-    a: "Subscriptions are month to month with 30 days' notice. No 12-month lock-ins. If the work isn't delivering, you shouldn't have to wait out a contract to leave. One-off quotes are scoped and priced before anything starts.",
+    q: "What about website builds?",
+    a: "Quoted separately after a discovery call. Not part of the monthly plans. Astro builds from $5,900, Webflow from $6,500.",
   },
   {
-    q: "Can I add or remove services later?",
-    a: "Yes — your basket is your subscription. Add services, remove services, and re-submit from the catalogue whenever your needs change. Ad spend and third-party licences are billed direct to those platforms, separate from the Yoonet subscription.",
+    q: "Why don't you have a cheaper option?",
+    a: "Because doing digital properly costs real time and attention. Below $600/month, we can't deliver work we'd be comfortable putting our name to.",
   },
 ];
 

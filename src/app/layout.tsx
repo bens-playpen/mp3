@@ -19,18 +19,18 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://marketplace.yoonet.com.au"),
   title: {
-    default: "Yoonet Marketplace — Order digital like it's a menu",
+    default: "Yoonet Marketplace - Your digital team, sorted",
     template: "%s · Yoonet Marketplace",
   },
   description:
-    "Order digital like it's a menu. 14 productised services — hosting, SEO, ads, builds, admin — from the Yoonet team behind 500+ Australian and New Zealand businesses. Subscriptions from $600/mo.",
+    "Three plans covering hosting, SEO, ads, social, and website updates. One team of 130 people. 15+ years looking after Australian and Kiwi businesses.",
   keywords: [
     "managed website",
     "digital marketing agency",
     "SEO agency Australia",
     "Google Ads management",
     "Yoonet",
-    "productised services",
+    "managed digital plans",
   ],
   authors: [{ name: "Yoonet" }],
   creator: "Yoonet",
@@ -39,15 +39,15 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: "https://marketplace.yoonet.com.au",
     siteName: "Yoonet Marketplace",
-    title: "Yoonet Marketplace — Order digital like it's a menu",
+    title: "Yoonet Marketplace - Your digital team, sorted",
     description:
-      "14 productised services. One catalogue. Managed digital from the Yoonet team.",
+      "Three plans covering hosting, SEO, ads, social, and website updates. One team of 130 people.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yoonet Marketplace — Order digital like it's a menu",
+    title: "Yoonet Marketplace - Your digital team, sorted",
     description:
-      "14 productised services. One catalogue. Managed digital from the Yoonet team.",
+      "Three plans covering hosting, SEO, ads, social, and website updates. One team of 130 people.",
   },
 };
 

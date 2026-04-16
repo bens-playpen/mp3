@@ -23,14 +23,14 @@ export function CTASection() {
               Hand off your digital headaches.
             </h2>
             <p className="mt-5 max-w-xl text-lg text-primary-foreground/85">
-              Book a 30-minute discovery call and you&apos;ll leave with a clear
-              recommendation — even if that recommendation is &ldquo;not
-              yet&rdquo;. No pressure, no proposal deck.
+              Ready to hand off your digital headaches? Book a 30-minute call
+              and we&apos;ll tell you straight whether we&apos;re the right fit
+              - even if the answer is not yet.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <Button asChild size="lg" variant="inverse">
-                <a href="https://cal.com/yoonet/discovery" target="_blank" rel="noreferrer">
+                <a href="https://calendly.com/yoonet" target="_blank" rel="noreferrer">
                   Book a discovery call
                   <ArrowRight className="h-4 w-4" />
                 </a>

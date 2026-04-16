@@ -17,7 +17,10 @@ const bad = [
 
 export function FitGate() {
   return (
-    <section className="relative overflow-hidden bg-foreground py-24 text-background md:py-32">
+    <section
+      id="fit"
+      className="relative overflow-hidden bg-foreground py-24 text-background md:py-32"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 yn-grid-dots opacity-[0.12]"

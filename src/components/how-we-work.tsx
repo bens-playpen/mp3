@@ -6,8 +6,8 @@ const phases = [
     title: "Discovery",
     duration: "30 min",
     body:
-      "A short call with someone senior — no discovery form, no sales funnel. We map where your business is, where you want it in 12 months, and whether we’re a fit at all.",
-    moments: ["Brief-back the same week", "Honest yes / no / not yet", "Catalogue recommendation"],
+      "A 30-minute call with someone senior. We'll map where your business is, where you want it to be, and recommend the right plan - even if that recommendation is 'not yet.'",
+    moments: ["Brief-back the same week", "Honest yes / no / not yet", "Plan recommendation"],
   },
   {
     n: "02",
@@ -29,7 +29,7 @@ const phases = [
 
 export function HowWeWork() {
   return (
-    <section id="how" className="relative scroll-mt-20 py-24 md:py-32">
+    <section id="how-we-work" className="relative scroll-mt-20 py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="max-w-3xl">
           <Badge variant="soft">How we work</Badge>
