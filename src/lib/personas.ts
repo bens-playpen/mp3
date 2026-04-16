@@ -1,78 +1,33 @@
-import type { ServiceId } from "./catalog";
+import type { TierId } from "./catalog";
 
-export interface PersonaOneOffPreset {
-  serviceId: ServiceId;
-  requestTypeId: string;
-}
-
-export interface Persona {
+export interface PersonaVignette {
   id: string;
-  name: string;
-  tagline: string;
-  /** Services that become the subscription preset. Must total ≥ $600/mo at catalog prices. */
-  subscriptionPreset: ServiceId[];
-  /** Optional one-off quote requests the persona would typically start with. */
-  oneOffPreset?: PersonaOneOffPreset[];
+  quote: string;
+  business: string;
+  tierId: TierId;
+  tierLabel: string;
 }
 
-export const PERSONAS: Persona[] = [
+export const PERSONAS: PersonaVignette[] = [
   {
-    id: "home-services",
-    name: "Home services company",
-    tagline: "Local trades, 15 staff, 3 trucks",
-    subscriptionPreset: ["google-ads", "basic-website-updates", "domain-hosting"],
+    id: "foundation-fit",
+    quote: "I've got a website. I just need someone to keep it running and make the odd update.",
+    business: "Trades, professional services, local operators",
+    tierId: "foundation",
+    tierLabel: "Foundation",
   },
   {
-    id: "allied-health",
-    name: "Allied health clinic",
-    tagline: "Multi-practitioner, Cliniko stack",
-    subscriptionPreset: ["managed-website-clinic", "seo-basic"],
+    id: "growth-fit",
+    quote: "I know I should be doing more with SEO and social media but I don't have the time.",
+    business: "Allied health, home services, professional services",
+    tierId: "growth",
+    tierLabel: "Growth",
   },
   {
-    id: "saas-startup",
-    name: "SaaS startup",
-    tagline: "Seed-stage, product-led growth",
-    subscriptionPreset: [
-      "seo-growth",
-      "google-ads",
-      "website-hosting-vercel",
-    ],
-    oneOffPreset: [
-      { serviceId: "website-dev-astro", requestTypeId: "landing-page" },
-    ],
-  },
-  {
-    id: "ecommerce",
-    name: "E-commerce brand",
-    tagline: "Shopify, 7-figure, scaling paid",
-    subscriptionPreset: ["meta-ads", "social-media", "seo-growth"],
-  },
-  {
-    id: "professional-services",
-    name: "Professional services",
-    tagline: "Consulting firm, 8 partners",
-    subscriptionPreset: [
-      "seo-basic",
-      "workspace-managed",
-      "basic-website-updates",
-    ],
-  },
-  {
-    id: "real-estate",
-    name: "Real estate agency",
-    tagline: "Regional team, 12 agents",
-    subscriptionPreset: [
-      "social-media",
-      "meta-ads",
-      "basic-website-updates",
-    ],
+    id: "performance-fit",
+    quote: "I'm ready to invest in ads and serious growth. I need someone managing the whole picture.",
+    business: "E-commerce, SaaS, multi-location, scaling operators",
+    tierId: "performance",
+    tierLabel: "Performance",
   },
 ];
-
-export const PERSONAS_BY_ID: Record<string, Persona> = PERSONAS.reduce(
-  (acc, p) => {
-    acc[p.id] = p;
-    return acc;
-  },
-  {} as Record<string, Persona>,
-);

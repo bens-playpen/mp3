@@ -1,17 +1,17 @@
 const footerNav = {
   Plans: [
-    { label: "Foundation", href: "#pricing" },
-    { label: "Growth", href: "#pricing" },
-    { label: "Performance", href: "#pricing" },
+    { label: "Foundation", href: "#pricing-foundation" },
+    { label: "Growth", href: "#pricing-growth" },
+    { label: "Performance", href: "#pricing-performance" },
   ],
   Company: [
-    { label: "How we work", href: "#how" },
+    { label: "How we work", href: "#how-we-work" },
     { label: "Who it's for", href: "#fit" },
     { label: "FAQ", href: "#faq" },
   ],
   Connect: [
     { label: "hello@yoonet.com.au", href: "mailto:hello@yoonet.com.au" },
-    { label: "Book a call", href: "#contact" },
+    { label: "Book a call", href: "https://calendly.com/yoonet" },
     { label: "Sydney · Auckland · Balanga", href: "#" },
   ],
 };

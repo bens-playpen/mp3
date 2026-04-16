@@ -1,4 +1,4 @@
-import { ArrowRight, PlayCircle } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -18,38 +18,31 @@ export function Hero() {
           </div>
 
           <h1 className="yn-fade-up yn-delay-2 mt-8 font-[family-name:var(--font-display)] text-[44px] font-extrabold leading-[1.02] tracking-[-0.035em] text-foreground sm:text-[64px] md:text-[84px] lg:text-[96px]">
-            Order digital
+            Your digital team,
             <br />
-            like it&apos;s{" "}
-            <span className="relative inline-block">
-              <span className="relative z-10">a menu</span>
-              <span
-                aria-hidden
-                className="absolute inset-x-0 bottom-2 -z-0 h-4 md:h-6 bg-secondary/60 rounded-full blur-[0.5px]"
-              />
-            </span>
-            .
+            sorted.
           </h1>
 
           <p className="yn-fade-up yn-delay-3 mt-8 max-w-2xl text-lg leading-relaxed text-foreground/70 md:text-xl">
-            14 productised services. One team. No discovery calls. Pick what
-            you need from the catalogue — hosting, SEO, ads, builds, admin —
-            and the Yoonet crew who&apos;ve looked after{" "}
-            <span className="font-semibold text-foreground">500+ Australian and Kiwi businesses</span>{" "}
-            gets to work. Subscriptions start at $600/mo.
+            Three plans. One team. Zero guesswork. Hosting, SEO, ads, social,
+            website updates - handled by 130 people who&apos;ve looked after{" "}
+            <span className="font-semibold text-foreground">
+              500+ Australian and Kiwi businesses
+            </span>{" "}
+            for 15 years.
           </p>
 
           <div className="yn-fade-up yn-delay-4 mt-10 flex flex-wrap items-center gap-3">
             <Button asChild size="lg">
-              <a href="#catalog">
-                Browse the catalogue
+              <a href="#pricing">
+                See the plans
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <a href="#templates">
-                <PlayCircle className="h-4 w-4" />
-                Start with a template
+              <a href="https://calendly.com/yoonet" target="_blank" rel="noreferrer">
+                <Calendar className="h-4 w-4" />
+                Book a strategy call
               </a>
             </Button>
           </div>
